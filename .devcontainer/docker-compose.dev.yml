@@ -1,0 +1,27 @@
+services:
+  app:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+      args:
+        USER: user
+        USER_GROUP: user
+        USER_PASSWORD: password
+        USER_HOME: /home/user
+        USER_SUDO: true
+        UID: 1000
+        GID: 1000
+        # Development
+        WORKSPACE: /workspace # directory where the project is located
+        # PYTHON_VERSION: 3.12 # python used by the project
+        # poetry
+        # POETRY_VERSION: 1.1.4 # poetry version
+    environment:
+      ZSH_THEME: agnoster # zsh theme
+      LC_ALL: en_US.UTF-8
+      LANG: en_US.UTF-8
+      LANGUAGE: en_US.UTF-8
+      PYENV_ROOT: /usr/share/pyenv
+      POETRY_VIRTUALENVS_IN_PROJECT: true
+    volumes:
+      - ../:/workspace
