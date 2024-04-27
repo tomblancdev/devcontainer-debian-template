@@ -1,0 +1,6 @@
+.devcontainer/
+.github/
+.vscode/
+.gitattributes
+.gitignore
+.Dockerfile
