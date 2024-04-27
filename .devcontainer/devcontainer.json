@@ -15,7 +15,8 @@
                 "christian-kohler.path-intellisense", // Autocompletes filenames
                 "github.vscode-pull-request-github", // Review and manage GitHub pull requests in Visual Studio Code
                 "tamasfe.even-better-toml", // TOML language support
-                "github.copilot" // AI pair programmer
+                "github.copilot", // AI pair programmer
+                "mutantdino.resourcemonitor" // Monitor CPU, memory, and disk usage
             ]
         }
     }
