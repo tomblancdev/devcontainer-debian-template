@@ -11,6 +11,7 @@ services:
         USER_SUDO: true
         UID: 1000
         GID: 1000
+        USER_SHELL: /bin/zsh
         # Development
         WORKSPACE: /workspace # directory where the project is located
         # PYTHON_VERSION: 3.12 # python used by the project

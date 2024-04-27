@@ -2,6 +2,7 @@ FROM debian:latest as builder
 
 ARG USER=user
 ARG USER_GROUP=user
+ARG USER_SHELL=/bin/zsh
 ARG USER_PASSWORD
 ARG USER_SUDO=false
 ARG UID=1000
