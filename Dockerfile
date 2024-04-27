@@ -207,5 +207,8 @@ RUN mkdir -p ${WORKSPACE} && \
 USER ${USER}
 WORKDIR ${WORKSPACE}
 
+# Set WORKSPACE as safe directory if git is installed
+RUN if [ -x "$(command -v git)" ]; then git config --global --add safe.directory ${WORKSPACE}; fi
+
 # Run a long-lived process
 CMD tail -f /dev/null
